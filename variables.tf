@@ -10,6 +10,7 @@ variable server_name {}
 variable storage_endpoint {}
 variable storage_account_access_key {}
 variable "edition" {}
+variable "create_mode" {}
 variable storage_account_access_key_is_secondary {
     type = bool
     default = true

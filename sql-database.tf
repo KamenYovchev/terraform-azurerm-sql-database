@@ -4,7 +4,7 @@ resource "azurerm_sql_database" "sql_database" {
   resource_group_name = var.resource_group_name
   location            = var.location
   server_name         = var.server_name
-  create_mode = "default"
+  create_mode = var.create_mode
   edition =  var.edition
 
   extended_auditing_policy {
